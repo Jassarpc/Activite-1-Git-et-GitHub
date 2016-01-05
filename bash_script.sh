@@ -24,3 +24,7 @@ then
 else
   sort="sort -rn -k 1"
 fi
+# on cherche le nombre d'occurence pour chaque lettre
+for letter in {A..Z}
+do
+  result=`grep $letter $1 | wc -l`
