@@ -31,3 +31,14 @@ int main ( int argc, char** argv )
         printf("Level invalide donc le level par defaut qui est  2\n");
         maximum = 100;
     }
+ do
+    {
+        
+        essais = 0;
+        myster = (rand() % (maximum - minimum + 1)) + minimum;
+
+        do
+        { // debut de partie
+            printf("Quel est le nombre ? ");
+            scanf("%d", &entry);
+            essais++;
