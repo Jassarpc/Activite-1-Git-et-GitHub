@@ -28,3 +28,5 @@ fi
 for letter in {A..Z}
 do
   result=`grep $letter $1 | wc -l`
+  echo `grep $letter $1 | wc -l` "-" $letter
+done | $sort
