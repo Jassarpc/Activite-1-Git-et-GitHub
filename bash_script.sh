@@ -20,3 +20,7 @@ then
     *)
       echo "L'option $2 n'est pas disponible"
       exit
+# si aucune option n'est fournie, le tri sera par défault
+else
+  sort="sort -rn -k 1"
+fi
